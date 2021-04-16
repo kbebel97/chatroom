@@ -1,4 +1,4 @@
-Simple chatroom web app using node and scoket.io
+Simple chatroom web app using node and socket.io
 
 Make sure you have node installed on your computer https://nodejs.org/en/download/
 
