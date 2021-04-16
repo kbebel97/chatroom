@@ -1,0 +1,32 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%; margin: 0;
+}
+
+#chat-info{
+    width: 200px; background-color: #12AEFF; border-right: 3px solid black; padding: 5px; display: flex; flex-direction: column; row-gap: 10px; display: flex;
+}
+
+#chat-info-mobile{
+    display: none; background-color: #12AEFF; justify-content: center; align-items: center; height: 100%;
+}
+
+/* @media only screen and (max-width: 600px) {
+    #chat-info {
+      display: none;
+    }
+    #chat-info-mobile{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 599px) {
+    #chat-info {
+        display: flex;
+    }
+    #chat-info-mobile{
+        display: none;
+    }
+} */
