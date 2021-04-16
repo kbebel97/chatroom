@@ -11,6 +11,11 @@ const botName = "Admin"
 //Set static folder
 app.use(express.static(path.join(__dirname, 'html_css')));
 // Run when a client connects 
+
+app.get('/', (req, res) => {
+    console.log('Hello');
+    res.sendFile("/index.html");
+})
 io.on('connection', socket => {
     socket.on('joinRoom', ({ username, room}) => {
         console.log(room);
@@ -51,6 +56,8 @@ io.on('connection', socket => {
         }
     });
 });
+
+
 
 const PORT = 3000 || process.env.PORT;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

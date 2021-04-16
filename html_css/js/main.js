@@ -31,6 +31,10 @@ function submit(){
     socket.emit('chatMessage', msg.value);
 }
 
+function leave(){
+    
+}
+
 function outputMessage(message){
 console.log('hello');
 const msg = document.createElement('div');
